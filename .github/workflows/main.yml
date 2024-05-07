@@ -8,3 +8,7 @@ jobs:
       - name: Clone down repository
         uses: actions/checkout@v4       
       - run: ci/build-app.sh
+      
+      - name: run unit test
+        uses: actions/checkout@v4
+      - run: ci/unit-test-app.sh
